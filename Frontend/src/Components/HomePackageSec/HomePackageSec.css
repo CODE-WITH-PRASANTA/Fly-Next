@@ -1,0 +1,103 @@
+/* Add styles for the package section */
+
+.package-section {
+    position: relative;
+    padding: 120px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .package-element-one,
+  .package-element-two {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  
+  .package-element-one {
+    left: 0;
+  }
+  
+  .package-element-two {
+    right: 0;
+  }
+  
+  .package-thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .package-prize {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e94e77;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .package-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .package-content-header .title a {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .package-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .package-list li {
+    margin-bottom: 10px;
+  }
+  
+  .package-btn .custom-btn {
+    background-color: #e94e77;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .package-video a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .package-video img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Swiper Controls */
+  .slider-prev,
+  .slider-next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  
+  .slider-prev {
+    left: 10px;
+  }
+  
+  .slider-next {
+    right: 10px;
+  }
+  

@@ -1,0 +1,409 @@
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 215, 0, 0.5);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 215, 0.5);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+
+/* Keyframe Animation for Slide-in Effect */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the Animation */
+.section-title {
+    animation: slideInFromLeft 3s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+
+.main-heading {
+    animation: slideInFromLeft 3s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.about-description {
+    animation: slideInFromLeft 3s ease-out forwards;
+    animation-delay: 0.7s;
+}
+
+.call-card {
+    animation: slideInFromLeft 3s ease-out forwards;
+    animation-delay: 0.9s;
+}
+
+
+
+    
+  .about-book-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #ffd700;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #111111; /* Dark text for contrast */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center the button */
+    animation: pulse 2s infinite; /* Add pulsating animation */
+  }
+  
+  .about-book-now:hover {
+    background-color: #e5c100; /* Slightly darker gold */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5); /* Glow effect */
+    animation: bounce 1s; /* Add bounce effect on hover */
+  }
+  
+  .plane-icon {
+    font-size: 1.5rem; /* Size of the airplane icon */
+    color: #111111; /* Dark color for contrast */
+  }
+  
+  
+  .background-overlay {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(-272deg, #111111 15%, rgba(25, 25, 25, 0.1) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .about-content {
+    flex: 1;
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+    padding: 1rem 2rem;
+  }
+  
+  .text-section {
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #e94e77; /* Golden color */
+  }
+  .section-title span {
+    color: #e8c177;
+  }
+  .main-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    color: #ffffff; /* White */
+  }
+  
+  .main-heading span {
+    color: #ffd700; /* Golden color for emphasis */
+  }
+  
+  /* Add color to FLY and NEXT */
+  .fly-text {
+    color: #e94e77; /* Pinkish color for "FLY" */
+  }
+  
+  .about-description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    opacity: 0.9;
+  }
+  
+  .call-to-action {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-card {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f54d; /* Light background for a clean look */
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.call-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.call-details {
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+    gap: 0.5rem;
+    color: #333; /* Dark color for text */
+    font-family: 'Arial', sans-serif;
+}
+
+.call-text {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #19232d; /* Golden color for emphasis */
+    text-transform: uppercase;
+}
+
+.call-number {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #19232d; /* Dark color for number */
+}
+
+
+.plane-icon {
+    font-size: 1.5rem;
+    color: #111;
+}
+
+@media (max-width: 768px) {
+    .call-card {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+    }
+
+    .about-book-now {
+        margin-top: 1.8rem; /* Add spacing between phone details and button */
+        width: 70%; /* Full-width button on small screens */
+    }
+
+    .call-details {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .call-card {
+        padding: 1.5rem 2rem;
+        width: 110%;
+    }
+
+    .call-text {
+        font-size: 1.2rem;
+    }
+
+    .call-number {
+        font-size: 1.4rem;
+    }
+
+    .about-book-now {
+        font-size: 1rem;
+    }
+}
+
+  
+  .plane-icon {
+    font-size: 1.5rem; /* Size of the airplane icon */
+    color: #111111; /* Dark color for contrast */
+  }
+  
+  .right-style {
+    position: absolute;
+    right: -100px;
+    bottom: -50px;
+    top: 250px;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 1024px) {
+    .section-title{
+        text-align: start;
+    }
+    .about-container {
+      padding: 2rem;
+    }
+  
+    .main-heading {
+        text-align: start;
+      font-size: 3rem;
+    }
+  
+    .about-description {
+      font-size: 1.1rem;
+    }
+  
+    .call-card {
+      padding: 2rem;
+    }
+  
+    .call-number {
+      font-size: 1.4rem;
+    }
+  
+    .right-style {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 2rem;
+    }
+  
+    .about-content {
+      max-width: 100%;
+    }
+  
+    .main-heading {
+      font-size: 2.5rem;
+    }
+  
+    .call-card {
+      padding: 1.5rem;
+    }
+  
+    .right-style {
+      width: 250px;
+      height: 250px;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .about-book-now {
+      font-size: 1rem;
+    }
+  }
+  
+
+  /* For small mobile screens */
+@media (max-width: 480px) {
+    
+
+    .right-style {
+        display: none;
+    }
+    .about-container {
+        padding: 1rem;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .about-description {
+        text-align: start;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .call-card {
+        width: 110%;
+        padding: 1.5rem;
+    }
+
+    .call-number {
+        font-size: 1.2rem;
+    }
+
+    .right-style {
+       display: none;
+    }
+
+    .about-book-now {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .plane-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* For very large screens (e.g., large desktop monitors) */
+@media (min-width: 1200px) {
+    .about-container {
+        padding: 6rem;
+    }
+
+    .main-heading {
+        font-size: 4rem;
+    }
+
+    .call-card {
+        width: 70%;
+        padding: 3rem;
+    }
+
+}

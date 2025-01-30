@@ -1,0 +1,174 @@
+.our-packages {
+    padding: 4rem 2rem;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #ffffff95, #f9f9f950);
+    border-top: 5px solid #fca311;
+    border-bottom: 5px solid #fca311;
+  }
+
+  .our-packages-header h5 {
+    color: #c8a35f;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .our-packages-header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #2b3945; /* Slightly darker and richer shade of blue-gray */
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35), 0px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .our-packages-header h1:hover {
+    color: #c8a35f; /* Highlight color matching the theme */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .package-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e8e8e8;
+  }
+
+  .package-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+    border-color: #c8a35f;
+  }
+
+  .package-image {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+  }
+
+  .package-card:hover .package-image {
+    transform: scale(1.05);
+  }
+
+  .package-content {
+    padding: 2rem;
+    text-align: left;
+    position: relative;
+    background: #fdfdfd;
+  }
+
+  .package-price {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #c8a35f;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    position: absolute;
+    top: -20px;
+    left: 2rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .package-content h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    margin: 2rem 0 0.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  
+  .package-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+
+  .package-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    justify-content: space-between;
+  }
+
+  .package-actions .book-now {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    background: #c8a35f;
+    color: #fff;
+    padding: 0.7rem 1.8rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .package-actions .book-now:hover {
+    background: #af8c4b;
+    transform: scale(1.1);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .package-actions .icon-left {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+  }
+
+  .package-actions .icon-right {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    color: #e74c3c;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .package-actions .icon-right:hover {
+    transform: scale(1.3);
+    color: #c0392b;
+  }
+
+  @media (max-width: 768px) {
+    .our-packages {
+      padding: 2rem 1rem;
+    }
+
+    .packages-grid {
+      gap: 1.5rem;
+    }
+
+    .package-card {
+      width: 100%;
+    }
+
+    .package-actions {
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }

@@ -1,0 +1,162 @@
+.benefits-section {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the section takes full viewport height */
+  }
+  
+  .benefits-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .benefits-section h5 {
+    color: #f39c12; /* Accent color for "Flynext" */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefits-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333; /* Dark text for better contrast */
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .benefit-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-icon {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .benefit-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .benefit-item p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Add gradient background to the section */
+  .benefits-section {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  }
+  
+  /* Add a subtle box shadow around the grid */
+  .benefits-grid {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .benefits-section h2 {
+      font-size: 2rem;
+    }
+  
+    .benefits-section h5 {
+      font-size: 1rem;
+    }
+  
+    .benefit-item {
+      padding: 2rem 1rem;
+    }
+  
+    .benefit-item h3 {
+      font-size: 1.4rem;
+    }
+  
+    .benefit-item p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Add a subtle animation on page load */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .benefits-section {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Larger screens with more than 1200px width */
+  @media (min-width: 1200px) {
+    .benefits-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Button styling for potential CTA buttons inside benefits */
+  .benefit-item a {
+    display: inline-block;
+    background-color: #f39c12;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .benefit-item a:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
