@@ -9,11 +9,15 @@ import Packages from './Pages/Packages/Packages';
 import Faqpage from './Pages/FaqPage/Faqpage';
 import ContactUs from './Pages/Contact/ContactUs';
 import FlightDetailsPage from './Pages/FlightDetailsPage/FlightDetailsPage';
+import Blog from './Pages/Blog/Blog';
+import BlogDetails from './Components/BlogDetails/BlogDetails';
+import Training from './Pages/Training/Training';
 
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation(); // Get current location to track route changes
 
+  
   useEffect(() => {
     // Scroll to the top of the page when the route changes
     window.scrollTo(0, 0);
@@ -24,6 +28,14 @@ function App() {
 
     return () => clearTimeout(timer);
   }, [location]); // When location changes (i.e., when the route changes), the loader appears
+
+  // Scroll to top when the page reloads
+  useEffect(() => {
+    window.onload = () => {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
 
   return (
     <div>
@@ -61,10 +73,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path='/blog' element={<Blog />}/>
+        <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path='/package' element={<Packages />}/>
         <Route path='/faq' element={<Faqpage />}/>
         <Route path='/contact' element={<ContactUs />}/>
         <Route path='/booking' element={<FlightDetailsPage />}/>
+        <Route path='/training' element={<Training />}/>
       </Routes>
       <Footer />
     </div>

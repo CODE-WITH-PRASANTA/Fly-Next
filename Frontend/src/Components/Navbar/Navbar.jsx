@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
-import { FaHome, FaInfoCircle, FaRegFileAlt, FaBlog, FaQuestionCircle, FaPhone, FaBars, FaTimes } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaRegFileAlt, FaBlog, FaQuestionCircle, FaPhone, FaBars, FaTimes , FaChalkboardTeacher } from 'react-icons/fa';
 import { MdFlightTakeoff } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
@@ -36,6 +36,9 @@ const Navbar = () => {
           <li className="menu-item" onClick={() => handleNavigation('/')}><FaHome className="icon" /> Home</li>
           <li className="menu-item" onClick={() => handleNavigation('/booking')}><FaRegFileAlt className="icon" /> Booking list</li>
           <li className="menu-item" onClick={() => handleNavigation('/package')}><FaInfoCircle className="icon" /> Package</li>
+          <li className="menu-item" onClick={() => handleNavigation('/training')}>
+            <FaChalkboardTeacher className="icon" /> Training
+          </li>
           <li className="menu-item" onClick={() => handleNavigation('/blog')}><FaBlog className="icon" /> Blog</li>
           <li className="menu-item" onClick={() => handleNavigation('/faq')}><FaQuestionCircle className="icon" />FAQ</li>
           <li className="menu-item" onClick={() => handleNavigation('/contact')}><FaPhone className="icon" /> Contact Us</li>

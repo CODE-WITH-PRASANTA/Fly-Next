@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPlane } from 'react-icons/fa'; // Import airplane icon
-import './AboutUsElement.css';
+import './AboutusElement.css';
 
 // Assets of the page
 import bgimg from '../../assets/About-bg.png';

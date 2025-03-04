@@ -14,7 +14,7 @@ const FlightDetailsPage = () => {
 
     <>
 
-<div className="flight-detail-container">
+    <div className="flight-detail-container">
       <div className="flight-detail-header">
         <h1> Booking detail's</h1>
         <p>Home &gt; <span>Booking-list</span></p>
