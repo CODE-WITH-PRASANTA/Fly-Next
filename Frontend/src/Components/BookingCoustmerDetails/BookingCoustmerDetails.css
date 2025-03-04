@@ -1,0 +1,385 @@
+/* General Styling */
+.booking-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Section */
+.booking-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 25px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.booking-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.progress-bar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.step-icon {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #ffd700;
+}
+
+.step.active {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Main Section */
+.booking-main {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    align-items: flex-start;
+}
+/* Booking Form */
+.booking-form {
+    flex: 2;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-left: 6px solid #007bff;
+    transition: 0.3s ease-in-out;
+}
+
+.booking-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.form-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+/* Form Layout */
+.customer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Labels */
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Input and Select Styling */
+.form-select, .booking-form-input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f8f9fa;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.form-select:focus, .booking-form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+    background: #fff;
+}
+
+/* Form Row (for multiple fields in one line) */
+.form-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.form-row .booking-form-input {
+    flex: 1;
+}
+
+/* Title Select */
+.form-select-title {
+    width: 60px;
+}
+
+/* Gender Selection */
+.gender-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.gender-radio {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gender-radio:checked {
+    background: #007bff;
+    border: 2px solid #0056b3;
+}
+
+.gender-radio:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gender-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Input Icons */
+.input-icon {
+    font-size: 20px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Enhancing Select Dropdowns */
+.form-select {
+    cursor: pointer;
+    background: white;
+    border: 2px solid #ccc;
+}
+
+.form-select:hover {
+    border-color: #007bff;
+}
+
+.form-select option {
+    padding: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .gender-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* Booking Information Sidebar */
+.booking-info {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-right: 6px solid #007bff;
+    transition: 0.3s ease-in-out;
+}
+
+.booking-info:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Individual Info Box */
+.info-box {
+    margin-bottom: 25px;
+    padding: 18px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    background: #e9f2ff;
+    border-left: 6px solid #0056b3;
+}
+
+/* Title Styling */
+.info-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Info Text & Icon */
+.info-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+.info-icon {
+    margin-right: 12px;
+    color: #007bff;
+    font-size: 18px;
+}
+
+/* Checkbox Styling */
+.info-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    padding: 6px 0;
+    transition: 0.3s ease;
+}
+
+.info-checkbox:hover {
+    color: #007bff;
+}
+
+.info-checkbox input {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Agree Policy Section */
+.agree-policy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+}
+
+.policy-checkbox {
+    accent-color: #007bff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Booking Footer */
+.booking-footer {
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    background: #007bff;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .booking-main {
+        flex-direction: column;
+    }
+
+    .progress-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking-info, .booking-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .confirm-btn {
+        width: 100%;
+    }
+}

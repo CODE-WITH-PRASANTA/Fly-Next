@@ -12,6 +12,7 @@ import FlightDetailsPage from './Pages/FlightDetailsPage/FlightDetailsPage';
 import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Components/BlogDetails/BlogDetails';
 import Training from './Pages/Training/Training';
+import BookingCoustmerDetails from './Components/BookingCoustmerDetails/BookingCoustmerDetails';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -75,6 +76,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path='/blog' element={<Blog />}/>
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path='/book-now' element={<BookingCoustmerDetails />}/>
         <Route path='/package' element={<Packages />}/>
         <Route path='/faq' element={<Faqpage />}/>
         <Route path='/contact' element={<ContactUs />}/>
