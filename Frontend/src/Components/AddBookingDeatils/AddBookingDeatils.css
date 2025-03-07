@@ -1,0 +1,254 @@
+/* Main container */
+.add-booking-container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1600px;
+    flex-wrap: wrap;
+}
+
+
+/* Booking form container */
+.add-booking-form {
+    flex: 2;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-booking-title {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form grid layout */
+.add-booking-form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Form column styling */
+.add-booking-form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels and input styling */
+.add-booking-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add-booking-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.add-booking-input:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Time picker alignment */
+.time-picker {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.am-pm-selector {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.am-pm-selector:hover {
+    border-color: #007bff;
+}
+
+/* Submit button */
+.add-booking-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.add-booking-button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.03);
+}
+
+/* Dropdown styling */
+.add-booking-input select {
+    cursor: pointer;
+    background: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .add-booking-form-grid {
+        flex-direction: column;
+    }
+}
+
+/* Aside section */
+.add-booking-aside {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-booking-aside-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Booking list */
+.add-booking-list {
+    list-style: none;
+    padding: 0;
+}
+
+.add-booking-item {
+    background: #f8f8f8;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.add-booking-item:hover {
+    transform: translateY(-5px);
+}
+
+.add-booking-item-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #222;
+}
+
+.add-booking-item-details {
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .add-booking-container {
+        flex-direction: column;
+    }
+
+    .add-booking-form-grid {
+        flex-direction: column;
+    }
+
+    .add-booking-aside {
+        margin-top: 25px;
+    }
+}
+
+
+
+.add-booking-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .add-booking-form {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-booking-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .add-booking-form-grid {
+    display: flex;
+  }
+  
+  .add-booking-form-column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .add-booking-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .add-booking-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .add-booking-button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .booking-icon {
+    margin-right: 5px;
+    color: #007bff;
+  }
+  
+  .add-booking-aside {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  

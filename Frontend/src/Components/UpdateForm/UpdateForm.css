@@ -1,0 +1,134 @@
+.UpdateForm-editing-sec-container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    border: 1px solid #dedede;
+  }
+  
+  .UpdateForm-editing-sec-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .UpdateForm-editing-sec-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .UpdateForm-editing-sec-label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  
+  .UpdateForm-editing-sec-input,
+  .UpdateForm-editing-sec-textarea,
+  .UpdateForm-editing-sec-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+
+  .UpdateForm-editing-sec-input:focus,
+  .UpdateForm-editing-sec-textarea:focus,
+  .UpdateForm-editing-sec-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  .UpdateForm-editing-sec-textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .UpdateForm-editing-sec-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .UpdateForm-editing-sec-tags-input {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .UpdateForm-editing-sec-add-tag-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .UpdateForm-editing-sec-add-tag-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .UpdateForm-editing-sec-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .UpdateForm-editing-sec-tag {
+    display: flex;
+    align-items: center;
+    background-color: #e9f7ff;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    color: #0277bd;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .UpdateForm-editing-sec-remove-tag-btn {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+  /* Additional Styling for Small Screens */
+  @media (max-width: 768px) {
+    .UpdateForm-editing-sec-container {
+      padding: 20px;
+    }
+  
+    .UpdateForm-editing-sec-title {
+      font-size: 1.5rem;
+    }
+  
+    .UpdateForm-editing-sec-input,
+    .UpdateForm-editing-sec-textarea,
+    .UpdateForm-editing-sec-select {
+      font-size: 0.9rem;
+    }
+  
+    .UpdateForm-editing-sec-submit-btn {
+      font-size: 1rem;
+    }
+  }
+  

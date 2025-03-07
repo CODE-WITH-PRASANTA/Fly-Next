@@ -13,12 +13,14 @@ import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Components/BlogDetails/BlogDetails';
 import Training from './Pages/Training/Training';
 import BookingCoustmerDetails from './Components/BookingCoustmerDetails/BookingCoustmerDetails';
+import BusinessJetChapter from './Components/BusinessJetChapter/BusinessJetChapter';
+import NewsDetails from './Components/NewsDetails/NewsDetails';
+import AdminLogin from './AdminPannel/AdminLogin/AdminLogin';
 
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation(); // Get current location to track route changes
 
-  
   useEffect(() => {
     // Scroll to the top of the page when the route changes
     window.scrollTo(0, 0);
@@ -37,6 +39,8 @@ function App() {
     };
   }, []);
 
+  // Check if the current route is an admin page
+  const isAdminPage = location.pathname.startsWith('/admin');
 
   return (
     <div>
@@ -69,21 +73,26 @@ function App() {
         </div>
       )}
 
-      {/* Navbar and Routes */}
-      <Navbar />
+      {/* Hide Navbar and Footer on admin pages */}
+      {!isAdminPage && <Navbar />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path='/blog' element={<Blog />}/>
+        <Route path='/blog' element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path='/book-now' element={<BookingCoustmerDetails />}/>
-        <Route path='/package' element={<Packages />}/>
-        <Route path='/faq' element={<Faqpage />}/>
-        <Route path='/contact' element={<ContactUs />}/>
-        <Route path='/booking' element={<FlightDetailsPage />}/>
-        <Route path='/training' element={<Training />}/>
+        <Route path='/book-now' element={<BookingCoustmerDetails />} />
+        <Route path='/package' element={<Packages />} />
+        <Route path='/businessjet' element={<BusinessJetChapter />}/>
+        <Route path='/faq' element={<Faqpage />} />
+        <Route path='/contact' element={<ContactUs />} />
+        <Route path='/booking' element={<FlightDetailsPage />} />
+        <Route path='/training' element={<Training />} />
+        <Route path="/news/:id" element={<NewsDetails />} />
+        <Route path='/admin' element={<AdminLogin />}/>
       </Routes>
-      <Footer />
+
+      {!isAdminPage && <Footer />}
     </div>
   );
 }

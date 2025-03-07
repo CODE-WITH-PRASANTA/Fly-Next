@@ -1,0 +1,132 @@
+/* Main Container */
+.Clients-Booking-container {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, #eef2f3, #dce0e3);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  /* Title */
+  .Clients-Booking-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color:  #2c3e50;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .Clients-Booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 1300px;
+  }
+  
+  /* Table Header */
+  .Clients-Booking-thead {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+  }
+  
+  .Clients-Booking-th {
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 3px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  /* Table Body */
+  .Clients-Booking-row {
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .Clients-Booking-row:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .Clients-Booking-row:hover {
+    background-color: #e9ecef;
+  }
+  
+  .Clients-Booking-td {
+    padding: 12px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  /* Scrollable Table */
+  .Clients-Booking-container {
+    overflow-x: auto;
+  }
+  
+  .Clients-Booking-table {
+    min-width: 1500px;
+  }
+  
+  /* Action Buttons */
+  .Clients-Booking-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .Clients-Booking-delete-btn,
+  .Clients-Booking-mark-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Clients-Booking-delete-btn {
+    background: linear-gradient(to right, #ff4d4d, #c82333);
+    color: white;
+  }
+  
+  .Clients-Booking-delete-btn:hover {
+    background: linear-gradient(to right, #c82333, #ff4d4d);
+  }
+  
+  .Clients-Booking-mark-btn {
+    background: linear-gradient(to right, #28a745, #1e7e34);
+    color: white;
+  }
+  
+  .Clients-Booking-mark-btn:hover {
+    background: linear-gradient(to right, #1e7e34, #28a745);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Clients-Booking-title {
+      font-size: 22px;
+      padding: 8px;
+    }
+  
+    .Clients-Booking-th,
+    .Clients-Booking-td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .Clients-Booking-delete-btn,
+    .Clients-Booking-mark-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+  

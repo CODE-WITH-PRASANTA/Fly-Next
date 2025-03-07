@@ -1,0 +1,268 @@
+.Businessjet-safety-section {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .Businessjet-safety-title {
+    color: #c29252;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .Businessjet-safety-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0 50px;
+  }
+
+  /* Main Section */
+.Businessjet-safety-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 60px 5%;
+  }
+  
+  /* Title & Heading */
+  .Businessjet-safety-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c29252;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .Businessjet-safety-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.3;
+  }
+  
+  /* Content Wrapper */
+  .Businessjet-safety-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+  }
+  
+  /* Column Style for Left & Right */
+  .Businessjet-safety-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+  }
+  
+  /* Each Item Box */
+  .Businessjet-safety-item {
+    text-align: start;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .Businessjet-safety-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Numbered Circle Styling */
+  .Businessjet-safety-number {
+    background: linear-gradient(135deg, #c29252, #a8763e);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Subtitle */
+  .Businessjet-safety-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  /* Text Content */
+  .Businessjet-safety-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+  }
+  
+  /* Jet Plane Image Container */
+  .Businessjet-safety-plane-container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Businessjet-safety-plane-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(194,146,82,0.2) 20%, transparent 60%);
+    border-radius: 50%;
+  }
+  
+  .Businessjet-safety-plane-img {
+    width: 100%;
+    max-width: 380px;
+    z-index: 2;
+    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .Businessjet-safety-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .Businessjet-safety-column {
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .Businessjet-safety-plane-container {
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .Businessjet-safety-heading {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Businessjet-safety-section {
+      padding: 50px 8%;
+    }
+  
+    .Businessjet-safety-heading {
+      font-size: 28px;
+    }
+  
+    .Businessjet-safety-item {
+      padding: 20px;
+    }
+  
+    .Businessjet-safety-number {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+  
+  
+  /* FLEX LAYOUT - Columns and Plane Centered */
+  .Businessjet-safety-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Column Style for Left & Right */
+  .Businessjet-safety-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 30%;
+  }
+  
+  /* Plane Image Section */
+  .Businessjet-safety-plane-container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Businessjet-safety-plane-bg {
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgb(255 157 21 / 20%) 30%, #dc161624 70%);
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .Businessjet-safety-plane-img {
+    width: 280px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  /* Floating Balloon Decoration */
+  .Businessjet-safety-section::before,
+  .Businessjet-safety-section::after {
+    content: "";
+    position: absolute;
+    background: url("../../assets/bollon-img.png") no-repeat center/contain;
+    width: 150px;
+    height: 180px;
+    opacity: 0.2;
+  }
+  
+  .Businessjet-safety-section::before {
+    left: 5%;
+    bottom: 10%;
+  }
+  
+  .Businessjet-safety-section::after {
+    right: 5%;
+    top: 10%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .Businessjet-safety-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Businessjet-safety-column {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .Businessjet-safety-plane-container {
+      width: 100%;
+    }
+  
+    .Businessjet-safety-item {
+      max-width: 400px;
+    }
+  }
+  

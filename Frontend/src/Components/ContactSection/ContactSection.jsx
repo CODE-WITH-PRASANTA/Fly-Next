@@ -62,16 +62,14 @@ const ContactSection = () => {
           <FaPhoneAlt className="contact-icon" />
           <div className="contact-details">
             <h4 className="contact-detail-title">Our Phone</h4>
-            <p className="contact-detail-text">+1 814 929 4263</p>
-            <p className="contact-detail-text">+1 814 929 4264</p>
+            <p className="contact-detail-text">+44 7403 645364</p>
           </div>
         </div>
         <div className="contact-info-item">
           <FaEnvelope className="contact-icon" />
           <div className="contact-details">
             <h4 className="contact-detail-title">Our Email</h4>
-            <p className="contact-detail-text">contact@flynext.com</p>
-            <p className="contact-detail-text">contact01@flynext.com</p>
+            <p className="contact-detail-text"> flynext.internsflyabroad@gmail.com</p>
           </div>
         </div>
       </div>

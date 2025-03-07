@@ -1,0 +1,245 @@
+.About-privatejet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 120px;
+    background-color: rgba(25, 35, 45, 0.9);
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .About-privatejet-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1300px;
+    width: 100%;
+  }
+  
+  .About-privatejet-image img {
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .About-privatejet-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .About-privatejet-text {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .About-privatejet-subtitle {
+    color: #b5854a;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .About-privatejet-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .About-privatejet-description {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+  
+  .About-privatejet-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .About-privatejet-features li {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .About-privatejet-features li:hover {
+    color: #b5854a;
+    transform: translateX(5px);
+  }
+  
+  .About-privatejet-book-btn {
+    background: linear-gradient(135deg, #b5854a, #8c6239);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .About-privatejet-book-btn:hover {
+    background: linear-gradient(135deg, #8c6239, #704b2a);
+    transform: scale(1.05);
+  }
+  
+  .About-privatejet-contact-sidebar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f8e1c0;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .About-privatejet-contact-sidebar:hover {
+    background-color: #b5854a;
+    color: white;
+  }
+  
+
+  /* Responsive Design */
+@media (max-width: 1200px) {
+    .About-privatejet-container {
+      padding: 50px 80px;
+    }
+  
+    .About-privatejet-content {
+      gap: 40px;
+    }
+  
+    .About-privatejet-image img {
+      width: 450px;
+    }
+  
+    .About-privatejet-text {
+        text-align: justify;
+      padding: 25px;
+    }
+  
+    .About-privatejet-title {
+      font-size: 32px;
+    }
+  
+    .About-privatejet-description {
+      font-size: 16px;
+    }
+  
+    .About-privatejet-book-btn {
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .About-privatejet-container {
+      flex-direction: column;
+      padding: 40px 50px;
+    }
+  
+    .About-privatejet-content {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .About-privatejet-image img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .About-privatejet-text {
+      max-width: 100%;
+    }
+  
+    .About-privatejet-contact-sidebar {
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      writing-mode: horizontal-tb;
+      margin-top: 20px;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .About-privatejet-container {
+      padding: 30px 20px;
+    }
+  
+    .About-privatejet-content {
+      gap: 20px;
+    }
+  
+    .About-privatejet-title {
+      font-size: 28px;
+    }
+  
+    .About-privatejet-description {
+      font-size: 15px;
+    }
+  
+    .About-privatejet-features li {
+      font-size: 15px;
+    }
+  
+    .About-privatejet-book-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .About-privatejet-content {
+      gap: 15px;
+    }
+  
+    .About-privatejet-title {
+      font-size: 24px;
+    }
+  
+    .About-privatejet-description {
+      font-size: 14px;
+    }
+  
+    .About-privatejet-features li {
+      font-size: 14px;
+    }
+  
+    .About-privatejet-book-btn {
+      font-size: 13px;
+      padding: 8px 18px;
+    }
+  
+    .About-privatejet-contact-sidebar {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  

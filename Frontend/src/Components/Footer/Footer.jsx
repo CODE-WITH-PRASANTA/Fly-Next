@@ -17,17 +17,17 @@ const Footer = () => {
             <div>
               <h4>Europe</h4>
               <p>45 Gloucester Road, London DT1M 3BF</p>
-              <p>+44 (0)20 3671 5709</p>
+              <p>+44 7403 645364</p>
             </div>
             <div>
               <h4>Asia & Pacific</h4>
               <p>2473 Red Road Ste 98, Singapore SG</p>
-              <p>+1 623 211 6319</p>
+              <p>+44 7403 645364</p>
             </div>
             <div>
               <h4>North America</h4>
               <p>45 Gloucester Road, London DT1M 3BF</p>
-              <p>+44 (0)20 3671 5709</p>
+              <p>+44 7403 645364</p>
             </div>
           </div>
         </div>

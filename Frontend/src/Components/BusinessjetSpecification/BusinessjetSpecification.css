@@ -1,0 +1,328 @@
+.businessjet-specification {
+    padding: 10px 0;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  }
+  
+  .businessjet-specification-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* Business Jet Specification Section */
+.businessjet-specification-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 50px 0;
+  }
+  
+  /* Image Section */
+  .businessjet-specification-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Specification Details */
+  .businessjet-specification-details {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Title */
+  .businessjet-specification-title {
+    color: #b08547;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .businessjet-specification-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #b08547;
+    margin-top: 5px;
+  }
+  
+  /* Aircraft Name */
+  .businessjet-specification-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .businessjet-specification-name:hover {
+    color: #b08547;
+  }
+  
+  /* Description */
+  .businessjet-specification-description,
+  .businessjet-specification-text {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    font-weight: 400;
+  }
+  
+  /* List of Features */
+  .businessjet-specification-list {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+  
+  .businessjet-specification-item {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .businessjet-specification-item:hover {
+    color: #b08547;
+  }
+  
+  /* Checkmark Icon */
+  .businessjet-specification-item::before {
+    content: "✔";
+    color: #b08547;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .businessjet-specification-item:hover::before {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .businessjet-specification-content {
+      flex-direction: column;
+      gap: 40px;
+      padding: 0px ;
+    }
+  
+    .businessjet-specification-details {
+      max-width: 100%;
+    }
+  
+    .businessjet-specification-list {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .businessjet-specification-title {
+      font-size: 18px;
+    }
+  
+    .businessjet-specification-name {
+      font-size: 32px;
+    }
+  
+    .businessjet-specification-item {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .businessjet-specification-name {
+      font-size: 28px;
+    }
+  
+    .businessjet-specification-item {
+      font-size: 15px;
+    }
+  }
+
+  
+  /* Business Jet Specification Stats Section */
+.businessjet-specification-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Stat Box */
+  .businessjet-specification-stat-box {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid rgba(200, 146, 82, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover Effect */
+  .businessjet-specification-stat-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Decorative Gradient Overlay */
+  .businessjet-specification-stat-box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(200, 146, 82, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .businessjet-specification-stat-box:hover::before {
+    opacity: 1;
+  }
+  
+  /* Statistic Value */
+  .businessjet-specification-stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Small Unit Styling (ft, nm, etc.) */
+  .businessjet-specification-stat-value small {
+    font-size: 16px;
+    font-weight: 500;
+    color: #c29252;
+    text-transform: uppercase;
+  }
+  
+  /* Statistic Label */
+  .businessjet-specification-stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover Color Change */
+  .businessjet-specification-stat-box:hover .businessjet-specification-stat-value {
+    color: #c29252;
+  }
+  
+  .businessjet-specification-stat-box:hover .businessjet-specification-stat-label {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .businessjet-specification-stats {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .businessjet-specification-stat-box {
+      min-width: 220px;
+      padding: 25px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .businessjet-specification-stat-value {
+      font-size: 28px;
+    }
+  
+    .businessjet-specification-stat-label {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .businessjet-specification-stats {
+        gap: 0px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .businessjet-specification-stat-box {
+      width: 90%;
+    }
+  
+    .businessjet-specification-stat-value {
+      font-size: 24px;
+    }
+  
+    .businessjet-specification-stat-label {
+      font-size: 12px;
+    }
+  }
+  
+
+
+  /* Icon Styling */
+.businessjet-specification-icon {
+    font-size: 42px;
+    color: #c29252;
+    margin-bottom: 10px;
+  }
+  
+  /* Statistic Value */
+  .businessjet-specification-stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  /* Small Unit Styling (ft, nm, etc.) */
+  .businessjet-specification-stat-value small {
+    font-size: 16px;
+    font-weight: 500;
+    color: #c29252;
+    text-transform: uppercase;
+  }
+  
+  /* Statistic Label */
+  .businessjet-specification-stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
