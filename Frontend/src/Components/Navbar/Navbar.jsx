@@ -42,7 +42,7 @@ const Navbar = () => {
           <li className="menu-item" onClick={() => handleNavigation('/blog')}><FaBlog className="icon" /> Blog</li>
           <li className="menu-item" onClick={() => handleNavigation('/faq')}><FaQuestionCircle className="icon" />FAQ</li>
           <li className="menu-item" onClick={() => handleNavigation('/contact')}><FaPhone className="icon" /> Contact Us</li>
-          <li className="menu-item book-now" onClick={() => handleNavigation('/book-now')}>
+          <li className="menu-item book-now" onClick={() => handleNavigation('/booking-pannel')}>
             <button className="book-now-btn">
               <MdFlightTakeoff className="icon" /> Book Now
             </button>

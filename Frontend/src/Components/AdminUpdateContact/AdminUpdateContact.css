@@ -1,0 +1,132 @@
+.admin-update-contact {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .admin-update-contact-title {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .admin-update-contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Form Section */
+  .admin-update-contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .admin-update-contact-label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .admin-update-contact-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s;
+  }
+  
+  .admin-update-contact-input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+  }
+  
+  .admin-update-contact-submit-btn {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .admin-update-contact-submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Saved Contacts Section */
+  .admin-update-contact-saved {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .admin-update-contact-saved-title {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-update-contact-no-data {
+    text-align: center;
+    color: #777;
+  }
+  
+  .admin-update-contact-card {
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .admin-update-contact-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .admin-update-contact-edit-btn {
+    padding: 6px 12px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .admin-update-contact-edit-btn:hover {
+    background: #e68900;
+  }
+  
+  .admin-update-contact-delete-btn {
+    padding: 6px 12px;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .admin-update-contact-delete-btn:hover {
+    background: #d32f2f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-update-contact-container {
+      flex-direction: column;
+    }
+  }
+  

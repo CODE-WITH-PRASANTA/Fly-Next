@@ -8,8 +8,10 @@ const updatenewsRoutes = require("./Routes/UpdateNewsRoutes/UpdateNewsRoutes");
 const categoryRoutes = require("./Routes/Category/categoryRoutes");
 const bookingRoutes = require("./Routes/BookingRoutes/bookingRoutes");
 const travelbookingRoutes = require("./Routes/TravelBookingRoutes/TravelBookingRoutes");
-const luxuryDealsRoutes = require(".//Routes/luxuryDealRoutes/luxuryDealRoutes");
+const luxuryDealsRoutes = require("./Routes/luxuryDealRoutes/luxuryDealRoutes");
 const imageRoutes = require("./Routes/imageRoutes/imageRoutes");
+const contactRoutes = require("./Routes/ContactRoutes/ContactRoutes"); // Adjust path as needed
+
 
 
 dotenv.config();
@@ -35,6 +37,9 @@ app.use("/api/bookings", bookingRoutes);
 app.use("/api/travelbookings", travelbookingRoutes);
 app.use("/api/luxury-deals", luxuryDealsRoutes);
 app.use("/api/images", imageRoutes);
+// Routes
+app.use("/api/contacts", contactRoutes);
+
 
 
 

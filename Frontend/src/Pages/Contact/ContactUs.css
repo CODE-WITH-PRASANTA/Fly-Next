@@ -144,7 +144,7 @@
   .form-input,
   .form-select,
   .form-textarea {
-    width: 205%;
+    width: 100%;
     padding: 14px 20px 14px 50px;
     border: 1px solid #ddd;
     border-radius: 8px;

@@ -56,7 +56,7 @@ const FlightDetailsPage = () => {
               <span className="Flight-Details-Amount">Price : ₹{booking.price} /--</span>
               <button
                 className="Flight-Details-Select"
-                onClick={() => navigate("/book-now")}
+                onClick={() => navigate("/booking-pannel")}
               >
                 Select <FaPlane />
               </button>

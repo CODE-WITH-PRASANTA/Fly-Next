@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import Backgroundimg from "../../assets/element-1.png";
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const [contacts, setContacts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5001/api/contacts")
+      .then((response) => response.json())
+      .then((data) => setContacts(data))
+      .catch((error) => console.error("Error fetching contacts:", error));
+  }, []);
+
   return (
     <footer className="footer" style={{ backgroundImage: `url(${Backgroundimg})` }}>
       <div className="footer-container">
@@ -15,19 +24,44 @@ const Footer = () => {
           </p>
           <div className="footer-contacts">
             <div>
-              <h4>Europe</h4>
-              <p>45 Gloucester Road, London DT1M 3BF</p>
-              <p>+44 7403 645364</p>
+            {contacts.length > 0 ? (
+              contacts.map((contact, index) => (
+                <div key={index}>
+                  <h4>Address {index + 1}</h4>
+                  <p>{contact.address1}</p>
+                  <p>Email : {contact.email} <br /> Ph No. {contact.phone}</p>
+                </div>
+              ))
+            ) : (
+              <p>Loading contact details...</p>
+            )}
             </div>
             <div>
-              <h4>Asia & Pacific</h4>
-              <p>2473 Red Road Ste 98, Singapore SG</p>
-              <p>+44 7403 645364</p>
+            {contacts.length > 0 ? (
+              contacts.map((contact, index) => (
+                <div key={index}>
+                  <h4>Address {index + 2}</h4>
+                 <p> {contact.address2 && <p> {contact.address2}</p>}  <p> Email: {contact.email}</p></p>
+                  <p>Ph No. : {contact.phone}</p>
+                </div>
+              ))
+            ) : (
+              <p>Loading contact details...</p>
+            )}
             </div>
             <div>
-              <h4>North America</h4>
-              <p>45 Gloucester Road, London DT1M 3BF</p>
-              <p>+44 7403 645364</p>
+            {contacts.length > 0 ? (
+              contacts.map((contact, index) => (
+                <div key={index}>
+                  <h4>Address {index + 3}</h4>
+                  {contact.address3 && <p>{contact.address3} <p> Email: {contact.email}</p></p>}
+
+                  <p> Ph no. : {contact.phone}</p>
+                </div>
+              ))
+            ) : (
+              <p>Loading contact details...</p>
+            )}
             </div>
           </div>
         </div>

@@ -16,6 +16,7 @@ import BookingCoustmerDetails from './Components/BookingCoustmerDetails/BookingC
 import BusinessJetChapter from './Components/BusinessJetChapter/BusinessJetChapter';
 import NewsDetails from './Components/NewsDetails/NewsDetails';
 import AdminLogin from './AdminPannel/AdminLogin/AdminLogin';
+import BookingPannel from './Components/BookingPannel/BookingPannel';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -90,6 +91,7 @@ function App() {
         <Route path='/training' element={<Training />} />
         <Route path="/news/:id" element={<NewsDetails />} />
         <Route path='/admin' element={<AdminLogin />}/>
+        <Route path='/booking-pannel' element={<BookingPannel />} />
       </Routes>
 
       {!isAdminPage && <Footer />}

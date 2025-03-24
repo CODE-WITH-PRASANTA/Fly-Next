@@ -20,6 +20,7 @@ import ViewLuxuryDeals from '../../Components/ViewLuxuryDeals/ViewLuxuryDeals';
 import CreateUpdate from '../../Components/CreateUpdate/CreateUpdate';
 import ManageUpdates from '../../Components/ManageUpdates/ManageUpdates';
 import ClientsBookingDetails from '../../Components/ClientsBookingDetails/ClientsBookingDetails';
+import AdminUpdateContact from '../../Components/AdminUpdateContact/AdminUpdateContact';
 
 const NAVIGATION = [
   {
@@ -119,6 +120,19 @@ const NAVIGATION = [
   {
     kind: 'divider',
   },
+  {
+    kind: 'header',
+    title: 'Manage Contact Details of Site',
+  },
+  {
+    segment: 'update-contact',
+    title: 'Update Contact Info',
+    icon: <EditIcon style={{ color: '#ff4081' }} />,
+  },
+  {
+    kind: 'divider',
+  },
+  
 ];
 
 const demoTheme = createTheme({
@@ -188,6 +202,7 @@ export default function DashboardLayoutBasic({ window }) {
               {router.pathname === '/create-updates' && <CreateUpdate />}
               {router.pathname === '/manage-updates' && <ManageUpdates />}
               {router.pathname === '/clients-booking-data' && <ClientsBookingDetails />}
+              {router.pathname === '/update-contact' && <AdminUpdateContact />}
             </PageContainer>
           </DashboardLayout>
         </AppProvider>
