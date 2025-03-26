@@ -4,6 +4,10 @@ import axios from 'axios'; // Import axios for API requests
 import './Home.css';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
+import axiosInstance from '../../Utils/Api'; // Import the axios instance
+
+
+
 // Import assets
 import jetImage from '../../assets/element-2.png';
 import AboutUsElement from '../../Components/AboutUsElement/AboutUsElement';
@@ -17,10 +21,10 @@ const Home = () => {
   const [phone, setPhone] = useState('');
 
   useEffect(() => {
-    // Fetch contact details from backend
+    // Fetch contact details from backend using axios instance
     const fetchContact = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/contacts');
+        const response = await axiosInstance.get('/contacts');
         if (response.data.length > 0) {
           setPhone(response.data[0].phone); // Get the first contact's phone
         }
