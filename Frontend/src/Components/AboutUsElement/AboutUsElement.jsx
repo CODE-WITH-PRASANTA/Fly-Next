@@ -17,7 +17,7 @@ const AboutUsElement = () => {
       try {
         const response = await axiosInstance.get("/contacts"); // Use axiosInstance
         if (response.data.length > 0) {
-          setPhoneNumber(response.data[0].phone); // Set first contact's phone
+          setPhoneNumber(`+44 ${response.data[0].phone}`); // Add country code +44
         }
       } catch (error) {
         console.error("Error fetching phone number:", error);
@@ -48,11 +48,11 @@ const AboutUsElement = () => {
           <div className="call-card" style={{ backgroundImage: `url(${callandbookbg})` }}>
             <div className="call-details">
               <p className="call-text">Call for book quick:</p>
-              <p className="call-number">+91 {phoneNumber || "Loading..."}</p>
+              <p className="call-number">{phoneNumber || "Loading..."}</p>
             </div>
             <button 
               className="about-book-now"
-              onClick={() => phoneNumber && (window.location.href = `tel:${phoneNumber}`)}
+              onClick={() => phoneNumber && (window.location.href = `tel:${phoneNumber.replace(/\s/g, "")}`)}
               disabled={!phoneNumber} // Disable button if phone number isn't loaded
             >
               <FaPlane className="plane-icon" /> Book Now

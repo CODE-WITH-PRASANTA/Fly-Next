@@ -62,10 +62,10 @@ const Home = () => {
                 
                 {/* "Request Quote" dynamically fetches phone number */}
                 {phone ? (
-                  <a href={`tel:${phone}`} className="btn btn-secondary">Request Quote</a>
-                ) : (
-                  <button className="btn btn-secondary" disabled>Loading...</button>
-                )}
+                    <a href={`tel:+44${phone}`} className="btn btn-secondary">Request Quote</a>
+                  ) : (
+                    <button className="btn btn-secondary" disabled>Loading...</button>
+                  )}
               </div>
             </div>
             <div className="banner-image">
